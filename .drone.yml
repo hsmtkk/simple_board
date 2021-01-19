@@ -24,6 +24,10 @@ steps:
   - name: app
     image: hsmtkk/simple_board:latest
     detach: true
+  - name: wait_app
+    image: jwilder/dockerize:0.6.1
+    commands:
+      - dockerize -wait http://app:80 -timeout 30s
   - name: test
     image: curlimages/curl:7.74.0
     commands:
