@@ -8,6 +8,10 @@ steps:
     image: sdesbure/yamllint:latest
     commands:
       - yamllint .drone.yml
+  - name: dockerfile_lint
+    image: hadolint/hadolint:v1.19.0
+    commands:
+      - hadolint Dockerfile
   - name: docker
     image: plugins/docker:19.03
     settings:
@@ -22,4 +26,3 @@ steps:
     image: curlimages/curl:7.74.0
     commands:
       - curl http://web_app
-
