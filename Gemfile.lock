@@ -60,7 +60,7 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
-    addressable (2.9.0)
+    addressable (2.9.1)
       public_suffix (>= 2.0.2, < 8.0)
     base64 (0.3.0)
     bindex (0.8.1)
@@ -194,9 +194,9 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (2.9.6)
+    sqlite3 (2.10.2)
       mini_portile2 (~> 2.8.0)
-    sqlite3 (2.9.6-x64-mingw-ucrt)
+    sqlite3 (2.10.2-x64-mingw-ucrt)
     thor (1.0.1)
     tilt (2.0.10)
     timeout (0.6.1)
@@ -246,7 +246,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   selenium-webdriver
   spring
-  sqlite3 (~> 2.9)
+  sqlite3 (~> 2.10)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
